@@ -1,0 +1,9 @@
+#ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+data:
+  DB_NAME: postgres
+  DB_HOST: postgres-service #Nombre del servidor con ip fija al ser un service
+  DB_PORT: "5432"
